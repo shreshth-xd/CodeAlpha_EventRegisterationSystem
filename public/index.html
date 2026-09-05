@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHub - Events</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<nav>
+    <a href="/" class="logo">EventHub</a>
+
+    <div id="navLinks">
+        <a href="/login.html">Login</a>
+        <a href="/register.html">Register</a>
+    </div>
+</nav>
+
+<main class="container">
+
+    <section class="hero">
+        <h1>Discover Upcoming Events</h1>
+        <p>Find events, reserve your spot and manage your registrations.</p>
+    </section>
+
+    <div id="message"></div>
+
+    <section>
+        <div class="section-header">
+            <h2>Upcoming Events</h2>
+            <button onclick="loadEvents()">Refresh</button>
+        </div>
+
+        <div id="events" class="event-grid">
+            <p>Loading events...</p>
+        </div>
+    </section>
+
+</main>
+
+<script src="/js/common.js"></script>
+<script src="/js/index.js"></script>
+
+</body>
+</html>
